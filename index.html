@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="GardePharma CI - Trouvez les pharmacies de garde en Côte d'Ivoire, leurs horaires, numéros et itinéraires.">
+  <meta name="theme-color" content="#10B981">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="flutter-renderer" content="html">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="GardePharma CI">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon.png"/>
+
+  <!-- PWA Manifest -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- Google AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6587148803413134"
+       crossorigin="anonymous"></script>
+
+  <title>GardePharma CI</title>
+</head>
+<body>
+  <style>
+    html, body { height: 100%; margin: 0; }
+    #app-loader {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      background: #F6F9F8;
+      font-family: 'Manrope', -apple-system, sans-serif;
+    }
+    #app-loader img {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      box-shadow: 0 8px 24px rgba(14, 159, 110, 0.35);
+    }
+    #app-loader .spinner {
+      width: 28px;
+      height: 28px;
+      border: 3px solid rgba(14, 159, 110, 0.2);
+      border-top-color: #10B981;
+      border-radius: 50%;
+      animation: app-loader-spin 0.8s linear infinite;
+    }
+    @keyframes app-loader-spin {
+      to { transform: rotate(360deg); }
+    }
+  </style>
+  <div id="app-loader">
+    <img src="icons/Icon-192.png" alt="GardePharma CI" />
+    <div class="spinner"></div>
+  </div>
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var loader = document.getElementById('app-loader');
+      if (loader) { loader.remove(); }
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

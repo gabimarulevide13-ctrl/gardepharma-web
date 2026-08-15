@@ -1,0 +1,36 @@
+{
+  "name": "GardePharma CI",
+  "short_name": "GardePharma CI",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#F6F9F8",
+  "theme_color": "#10B981",
+  "description": "Trouvez les pharmacies de garde en Côte d'Ivoire, leurs horaires, numéros et itinéraires.",
+  "orientation": "portrait-primary",
+  "prefer_related_applications": false,
+  "categories": ["medical", "health", "navigation"],
+  "icons": [
+    {
+      "src": "icons/Icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/Icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "icons/Icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}
